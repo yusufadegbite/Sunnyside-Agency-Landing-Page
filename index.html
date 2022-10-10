@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Meta Tags-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="css/main.css" />
+
+    <title>Frontend Mentor | Sunnyside agency landing page</title>
+  </head>
+  <body>
+    <!--Navbar-->
+    <div
+      class="relative bg-image-header-mobile h-[500px] md:h-screen bg-cover bg-no-repeat bg-center sm:bg-image-header-desktop"
+    >
+      <nav class="relative container mx-auto p-6">
+        <!--Flex Container-->
+        <div class="flex items-center justify-between">
+          <!--Logo-->
+          <div class="pt-2">
+            <img src="images/logo.svg" alt="" />
+          </div>
+          <!--Menu-->
+          <div class="hidden md:flex">
+            <!--Menu Items-->
+            <div class="hidden space-x-6 mr-6 text-white pt-3 md:flex">
+              <a href="#">About</a>
+              <a href="#">Services</a>
+              <a href="#">Projects</a>
+            </div>
+            <!--Button-->
+            <a
+              href=""
+              class="p-3 px-6 font-bold bg-white rounded-full baseline hover:text-white hover:bg-darkBlue"
+            >
+              CONTACT
+            </a>
+          </div>
+          <!--Humburger Icon-->
+          <button
+            id="menu-btn"
+            class="block mt-2 hamburger md:hidden focus:outline-none"
+          >
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
+          </button>
+        </div>
+
+        <!--Mobile Menu-->
+        <div class="md:hidden">
+          <div
+            id="menu"
+            class="absolute flex-col text-lg items-center hidden text-darkGrayishBlue self-end py-8 mt-10 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md"
+          >
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Projects</a>
+            <a
+              href=""
+              class="p-3 px-6 font-bold bg-white rounded-full bg-yellow baseline hover:text-white hover:bg-darkBlue"
+            >
+              CONTACT
+            </a>
+          </div>
+        </div>
+      </nav>
+
+      <!--Header Section-->
+      <div id="headerpart">
+        <!--Flex Container-->
+        <div
+          class="flex flex-col items-center mx-auto px-32 mt-10 md:px-6 sm:mt-4 md:mt-10 space-y-8 md:space-y-14"
+        >
+          <h1
+            class="text-center pt-2 text-white text-[38px] leading-[40px] md:pt-0 md:leading-normal md:pb-2 md:text-[45px] font-black tracking-widest"
+          >
+            WE ARE CREATIVES
+          </h1>
+
+          <img class="" src="./images/icon-arrow-down.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!--Hero Section-->
+    <section id="hero">
+      <!--Flex Container-->
+      <div
+        class="flex flex-col-reverse md:flex-row items-center mx-auto md:flex-row md:space-y-0"
+      >
+        <!--Left Item-->
+        <div
+          class="flex px-4 flex-col pb-20 md:pb-10 md:pl-6 md:h-full space-y-6 md:w-1/2 lg:pl-32"
+        >
+          <h1
+            class="max-w-md text-4xl font-bold mt-20 text-center md:mt-2 md:text-5xl md:text-left lg:mt-16"
+          >
+            Transform your brand
+          </h1>
+
+          <p
+            class="max-w-sm px-4 text-center text-darkGrayishBlue md:px-0 md:text-left"
+          >
+            We are a full-service creative agency specializing in helping brands
+            grow fast. Engage your clients through compelling visuals that do
+            most of the marketing for you.
+          </p>
+
+          <div class="flex justify-center md:justify-start">
+            <a
+              href=""
+              class="text-md font-bold md:text-lg pb-0 leading-none border-b-4 border-yellow"
+            >
+              LEARN MORE
+            </a>
+          </div>
+        </div>
+
+        <!--Image-->
+        <div class="md:w-1/2">
+          <img
+            class="w-full hidden md:block"
+            src="./images/desktop/image-transform.jpg"
+            alt=""
+          />
+          <img
+            class="w-full md:hidden"
+            src="./images/mobile/image-transform.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Hero Section 2-->
+    <section id="hero">
+      <!--Flex Container-->
+      <div
+        class="flex flex-col-reverse md:flex-row items-center md:flex-row-reverse md:space-y-0"
+      >
+        <!--Left Item-->
+        <div
+          class="flex flex-col px-4 pb-20 space-y-6 md:space-y-4 md:pb-10 md:pb-10 md:pl-10 md:w-1/2 lg:pl-24"
+        >
+          <h1
+            class="max-w-md text-4xl font-bold text-center mt-20 md:mt-2 md:text-5xl md:text-left lg:mt-16"
+          >
+            Stand out to the right audience
+          </h1>
+
+          <p
+            class="max-w-md px-4 text-center text-darkGrayishBlue md:px-0 md:text-left"
+          >
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we'll build and
+            extend your brand in digital places.
+          </p>
+          <div class="flex justify-center md:justify-start">
+            <a
+              href=""
+              class="text-md font-bold md:text-lg pb-0 leading-none border-b-4 border-darkDesaturatedcyan"
+            >
+              LEARN MORE
+            </a>
+          </div>
+        </div>
+
+        <!--Image-->
+        <div class="md:w-1/2">
+          <img
+            class="w-full hidden md:block"
+            src="./images/desktop/image-stand-out.jpg"
+            alt=""
+          />
+          <img
+            class="w-full md:hidden"
+            src="./images/mobile/image-stand-out.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Features-->
+    <section id="features">
+      <!--Flex Container-->
+      <div class="flex flex-col items-center md:flex-row">
+        <!--Left Item-->
+        <div
+          class="bg-center bg-cover bg-no-repeat bg-image-graphic-design-mobile md:bg-image-graphic-design-desktop md:w-1/2 md:h-full"
+        >
+          <h1
+            class="text-3xl text-darkBlue font-bold text-center mt-80 pt-40 mb-6 md:mt-80"
+          >
+            Graphic design
+          </h1>
+          <p
+            class="text-center text-darkGrayishBlue px-12 md:px-14 mb-10 lg:px-44"
+          >
+            Great design makes you memorable.We deliver artwork that underscores
+            your brand message and captures potential clients' attention.
+          </p>
+        </div>
+
+        <!--Right Item-->
+        <div
+          class="bg-center bg-cover bg-no-repeat bg-image-photography-mobile md:bg-image-photography-desktop md:w-1/2 md:h-full"
+        >
+          <h1
+            class="text-3xl text-darkBlue font-bold text-center mt-80 pt-40 mb-6 md:mt-100 lg:mt-80"
+          >
+            Photography
+          </h1>
+          <p
+            class="text-center text-darkGrayishBlue px-12 mb-10 md:px-14 lg:px-44"
+          >
+            Increase your credibility by getting the most stunning, high-quality
+            photos that improve your business image.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonial-->
+    <section class="bg-softRed pt-32" id="testimonial">
+      <h1 class="text-center text-xl font-bold text-darkGrayishBlue">
+        CLIENT TESTIMONIALS
+      </h1>
+      <!--Testimonial Container-->
+      <div class="flex flex-col mt-16 md:flex-row md:space-x-6">
+        <!--Testimonial 1-->
+        <div
+          class="flex flex-col items-center p-6 space-y-6 rounded-lg md:w-1/3"
+        >
+          <img
+            src="images/image-emily.jpg"
+            alt=""
+            class="w-16 mt-2 md:-mt-8 rounded-full"
+          />
+          <p class="text-sm text-center px-8 md:px-2 lg:px-16">
+            We put our trust in Sunnyside and they delivered, making sure our
+            needs were met and deadlines were always hit.
+          </p>
+          <div class="leading-[3px] text-center">
+            <h5 class="text-lg font-bold md:pt-8">Emily R.</h5>
+            <p class="text-sm text-darkGrayishBlue leading-">
+              Marketing Director
+            </p>
+          </div>
+        </div>
+
+        <!--Testimonial 2-->
+        <div
+          class="flex flex-col items-center p-6 space-y-6 rounded-lg md:w-1/3"
+        >
+          <img
+            src="images/image-thomas.jpg"
+            alt=""
+            class="w-16 mt-4 md:-mt-8 rounded-full"
+          />
+          <p class="text-sm text-center px-8 md:px-2 lg:px-16">
+            Sunnyside's enthusiasm coupled with their keen interest in our
+            brand's success made it a satisfying and enjoyable experience
+          </p>
+          <div class="leading-[3px] text-center">
+            <h5 class="text-lg font-bold md:pt-8">Thomas S.</h5>
+            <p class="text-sm text-darkGrayishBlue">Chief Operating Officer</p>
+          </div>
+        </div>
+
+        <!--Testimonial 3-->
+        <div
+          class="flex flex-col items-center p-6 space-y-6 rounded-lg md:w-1/3"
+        >
+          <img
+            src="images/image-jennie.jpg"
+            alt=""
+            class="w-16 mt-4 md:-mt-8 rounded-full"
+          />
+          <p class="text-sm text-center px-8 md:px-2 lg:px-16">
+            Incredible end result! Our sales increased over 400% when we worked
+            with Sunnyside. Highly recommended!
+          </p>
+          <div class="leading-[3px] text-center">
+            <h5 class="text-lg font-bold md:pt-8">Jennie F.</h5>
+            <p class="text-sm text-darkGrayishBlue">Business Owner</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Products-->
+    <section class="pt-32" id="products">
+      <!--Products Container-->
+      <div class="flex w-full h-full flex-col md:flex-row">
+        <!--Left Item-->
+        <div class="hidden flex-row w-full h-full md:w-1/2 md:flex">
+          <img
+            src="./images/desktop/image-gallery-milkbottles.jpg"
+            class="w-1/2 h-full"
+          />
+          <img
+            src="./images/desktop/image-gallery-orange.jpg"
+            class="w-1/2 h-full"
+          />
+        </div>
+        <div class="flex flex-row w-full h-full md:hidden md:w-1/2">
+          <img
+            src="./images/mobile/image-gallery-milkbottles.jpg"
+            class="w-1/2 h-full"
+          />
+          <img
+            src="./images/mobile/image-gallery-orange.jpg"
+            class="w-1/2 h-full"
+          />
+        </div>
+
+        <!--Right Item-->
+        <div class="hidden flex-row w-full h-full md:flex md:w-1/2">
+          <img
+            src="./images/desktop/image-gallery-cone.jpg"
+            class="w-1/2 h-full"
+          />
+          <img
+            src="./images/desktop/image-gallery-sugarcubes.jpg"
+            class="w-1/2 h-full"
+          />
+        </div>
+        <div class="flex flex-row w-full h-full md:hidden md:w-1/2">
+          <img
+            src="./images/mobile/image-gallery-cone.jpg"
+            class="w-1/2 h-full"
+          />
+          <img
+            src="./images/mobile/image-gallery-sugar-cubes.jpg"
+            class="w-1/2 h-full"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!--Footer-->
+    <div class="flex relative flex-col bg-darkModerateCyan space-y-6 py-8">
+      <!--Logo-->
+      <div class="flex justify-center items-center pt-2">
+        <img src="images/logo-copy.svg" class="logo" alt="" />
+      </div>
+      <!--Menu-->
+      <div class="flex text-center justify-center">
+        <!--Menu Items-->
+        <div class="space-x-12 text-center text-veryDarkGrayishBlue pt-3 flex">
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Projects</a>
+        </div>
+      </div>
+      <!--Social Icons-->
+      <div class="flex justify-center pt-10 flex-row space-x-6">
+        <img src="./images/icon-facebook.svg" alt="" class="" />
+        <img src="./images/icon-instagram.svg" alt="" class="" />
+        <img src="./images/icon-twitter.svg" alt="" class="" />
+        <img src="./images/icon-pinterest.svg" alt="" class="" />
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >.Coded by <a href="#">Yusuf Adegbite</a>.
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
